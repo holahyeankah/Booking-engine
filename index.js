@@ -35,9 +35,9 @@ app.use(express.json())
 app.use(cookieParser())
 
 app.use("/api/auths", authRoute)
-// app.use("/api/users", userRoute)
-// app.use("/api/hotels", hotelRoute)
-// app.use("/api/rooms", roomRoute)
+app.use("/api/users", userRoute)
+app.use("/api/hotels", hotelRoute)
+app.use("/api/rooms", roomRoute)
 
 
 app.use((err,req,res,next)=>{

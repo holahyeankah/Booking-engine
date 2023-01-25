@@ -1,6 +1,4 @@
 import express  from "express";
-import Room from "../models/room.js";
-import Hotel from "../models/Hotel.js";
 import { verifyAdmin, verifyUser } from "../utils/VerifyToken.js"
 import { createRoom, deleteRoom, getRoom, getRooms, updateRoom } from "../controllers/Rooms.js";
 
