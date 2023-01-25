@@ -4,4 +4,5 @@ import { createUser, login } from "../controllers/Auth.js";
 const router =express.Router()
 router.post("/register", createUser);
 router.post("/login", login);
+
 export default router
