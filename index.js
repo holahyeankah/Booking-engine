@@ -2,9 +2,9 @@ import express from "express";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 // import authRoute from "./routes/Auth.js"
-import userRoute from "./routes/User.js"
-import hotelRoute from "./routes/Hotel.js"
-import roomRoute from "./routes/Room.js";
+// import userRoute from "./routes/User.js"
+// import hotelRoute from "./routes/Hotel.js"
+// import roomRoute from "./routes/Room.js";
 import cookieParser from "cookie-parser"
 import jwt from "jsonwebtoken";
 mongoose.set("strictQuery", false);
@@ -34,10 +34,10 @@ mongoose.connection.on("Connected", ()=>{
 app.use(express.json())
 app.use(cookieParser())
 
-app.use("/api/auths", authRoute)
-app.use("/api/users", userRoute)
-app.use("/api/hotels", hotelRoute)
-app.use("/api/rooms", roomRoute)
+// app.use("/api/auths", authRoute)
+// app.use("/api/users", userRoute)
+// app.use("/api/hotels", hotelRoute)
+// app.use("/api/rooms", roomRoute)
 
 
 app.use((err,req,res,next)=>{
